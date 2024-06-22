@@ -19,6 +19,10 @@
                 display: block;
                 cursor: pointer;
 
+                    @media (max-width:768px) {
+                        font-size: 14px;
+                    }
+
                 &::after {
                     content: '+';
                     position: absolute;

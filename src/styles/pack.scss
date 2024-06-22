@@ -9,12 +9,30 @@
         display: flex;
         justify-content: space-around;
         margin-top: 50px;
+
+        @media (max-width:768px) {
+            display: block;
+            
+        }
         
+        .button {
+            margin-top: 24px;
+
+            @media (max-width:768px) {
+                width: 88%;
+            }
+        }
+
         &__item {
             text-align: center;
             padding: 75px 44px 44px;
             max-width: 380px;
             width: 100%;
+
+            @media (max-width:768px) {
+                padding: 10px;
+                margin-bottom: 18px;
+            }
             
             &:nth-child(2) {
                 background-image: url(../images/fundo_combo_plus.png);
@@ -35,5 +53,9 @@
 
     .p {
         text-align: center;
+
+        @media (max-width:768px) {
+            padding: 1000px;
+        }
     }
 }
